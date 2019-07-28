@@ -5,10 +5,16 @@
     <gazebo reference="link_chassis">
         <material>Gazebo/Orange</material>
     </gazebo>
-    <gazebo reference="link_left_wheel">
+    <gazebo reference="link_front_left_wheel">
         <material>Gazebo/Blue</material>
     </gazebo>
-    <gazebo reference="link_right_wheel">
+    <gazebo reference="link_front_right_wheel">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+    <gazebo reference="link__back_left_wheel">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+    <gazebo reference="link__back_right_wheel">
         <material>Gazebo/Blue</material>
     </gazebo>
 
