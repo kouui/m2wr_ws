@@ -3,6 +3,7 @@
 <robot name="m2wr" xmlns:xacro="http://www.ros.org/wiki/xacro">
     <!-- inludes -->
     <xacro:include filename="$(find m2wr_description)/urdf/macros.xacro" />
+    <xacro:include filename="$(find m2wr_description)/urdf/materials.xacro" />
 
     <!-- main body -->
     <link name="link_chassis">
