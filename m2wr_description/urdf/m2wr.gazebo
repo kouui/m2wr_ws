@@ -11,10 +11,10 @@
     <gazebo reference="link_front_right_wheel">
         <material>Gazebo/Blue</material>
     </gazebo>
-    <gazebo reference="link__back_left_wheel">
+    <gazebo reference="link_back_left_wheel">
         <material>Gazebo/Blue</material>
     </gazebo>
-    <gazebo reference="link__back_right_wheel">
+    <gazebo reference="link_back_right_wheel">
         <material>Gazebo/Blue</material>
     </gazebo>
 
@@ -23,8 +23,8 @@
         <plugin filename="libgazebo_ros_diff_drive.so" name="differential_drive_controller">
             <alwaysOn>true</alwaysOn>
             <updateRate>20</updateRate>
-            <leftJoint>joint_left_wheel</leftJoint>
-            <rightJoint>joint_right_wheel</rightJoint>
+            <leftJoint>joint_back_left_wheel</leftJoint>
+            <rightJoint>joint_back_right_wheel</rightJoint>
             <wheelSeparation>0.4</wheelSeparation>
             <wheelDiameter>0.2</wheelDiameter>
             <torque>0.1</torque>
