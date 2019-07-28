@@ -7,7 +7,7 @@
     <xacro:include filename="$(find m2wr_description)/urdf/materials.xacro" />
 
     <!-- hyper parameters : camera -->
-    <xacro:property name="camera_size" value="0.02"/>
+    <xacro:property name="camera_size" value="0.06"/>
     <xacro:property name="camera_origin_x" value="0.15"/>
     <xacro:property name="camera_origin_y" value="0"/>
     <xacro:property name="camera_origin_z" value="0.05"/>
@@ -102,7 +102,7 @@
         <!-- visual -->
         <visual>
             <geometry>
-                <box size="${camera_size} ${camera_size} ${camera_size}"/>
+                <box size="${camera_size/3} ${camera_size*2} ${camera_size/2}"/>
             </geometry>
         <material name="white"/>
         </visual>
