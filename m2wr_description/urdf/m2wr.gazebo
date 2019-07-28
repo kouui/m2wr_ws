@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+    <!-- overwrite the material -->
     <gazebo reference="link_chassis">
         <material>Gazebo/Orange</material>
     </gazebo>
@@ -11,6 +12,7 @@
         <material>Gazebo/Blue</material>
     </gazebo>
 
+    <!-- controller : robot -->
     <gazebo>
         <plugin filename="libgazebo_ros_diff_drive.so" name="differential_drive_controller">
             <alwaysOn>true</alwaysOn>
@@ -27,6 +29,7 @@
         </plugin>
     </gazebo>
 
+    <!-- controller : sensor -->
     <gazebo reference="sensor_laser">
         <sensor type="ray" name="head_hokuyo_sensor">
             <pose>0 0 0 0 0 0</pose>
