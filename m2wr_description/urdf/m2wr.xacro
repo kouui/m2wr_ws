@@ -10,7 +10,7 @@
     <xacro:property name="camera_size" value="0.06"/>
     <xacro:property name="camera_origin_x" value="0.24"/>
     <xacro:property name="camera_origin_y" value="0"/>
-    <xacro:property name="camera_origin_z" value="0.06"/>
+    <xacro:property name="camera_origin_z" value="0.05"/>
 
     <xacro:macro name="default_inertial" params="mass">
         <inertial>
@@ -109,7 +109,7 @@
         <!-- collsion -->
         <collision>
             <geometry>
-                <box size="${camera_size/3} ${camera_size} ${camera_size/2}"/>
+                <box size="${{camera_size/3} ${camera_size} ${camera_size/2}"/>
             </geometry>
         </collision>
         <xacro:default_inertial mass="0.02"/>
