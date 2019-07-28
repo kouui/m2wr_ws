@@ -57,6 +57,31 @@
                 <sphere radius="0.05"/>
             </geometry>
         </visual>
+
+        <!-- caster back -->
+        <collision name="caster_back_collision">
+            <origin rpy=" 0 0 0" xyz="-0.35 0 -0.05"/>
+            <geometry>
+                <sphere radius="0.05"/>
+            </geometry>
+            <surface>
+                <friction>
+                    <!-- frictionless between these two surface -->
+                    <ode>
+                        <mu>0</mu>
+                        <mu2>0</mu2>
+                        <slip1>1.0</slip1>
+                        <slip2>1.0</slip2>
+                    </ode>
+                </friction>
+            </surface>
+        </collision>
+        <visual name="caster_back_visual">
+            <origin rpy=" 0 0 0" xyz="-0.2 0 -0.05"/>
+            <geometry>
+                <sphere radius="0.05"/>
+            </geometry>
+        </visual>
     </link>
 
     <!-- sensor : link -->
